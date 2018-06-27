@@ -1,0 +1,32 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  "redirects": [
+    {
+      "source": "/v1/data",
+      "destination": "http://45.77.9.168:8080/v1/data",
+      "type": 302
+    },
+    {
+      "source": "/v1/currency",
+      "destination": "http://45.77.9.168:8080/v1/currency",
+      "type": 302
+    },
+    {
+      "source": "/debug/update",
+      "destination": "http://45.77.9.168:8080/debug/update",
+      "type": 302
+    },
+    {
+      "source": "/debug/push",
+      "destination": "http://45.77.9.168:8080/debug/push",
+      "type": 302
+    }
+  ]
+}
