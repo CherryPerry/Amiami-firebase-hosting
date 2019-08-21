@@ -8,23 +8,8 @@
     ],
     "redirects": [
       {
-        "source": "/v1/data",
-        "destination": "https://45.77.9.168:8080/v1/data",
-        "type": 302
-      },
-      {
-        "source": "/v1/currency",
-        "destination": "https://45.77.9.168:8080/v1/currency",
-        "type": 302
-      },
-      {
-        "source": "/debug/update",
-        "destination": "https://45.77.9.168:8080/debug/update",
-        "type": 302
-      },
-      {
-        "source": "/debug/push",
-        "destination": "https://45.77.9.168:8080/debug/push",
+        "source": "/:any*",
+        "destination": "http://45.77.9.168:8080/:any",
         "type": 302
       }
     ]
