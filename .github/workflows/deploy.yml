@@ -1,0 +1,16 @@
+name: Deploy
+on: [push]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install NodeJS
+      uses: actions/setup-node@v1
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Install Firebase Tools
+      run: npm install -g firebase-tools
+    - name: Run a multi-line script
+      env:
+        super_secret: ${{ secrets.FIREBASE_TOKEN }}
+      run: firebase deploy --token "$FIREBASE_TOKEN"
