@@ -13,4 +13,4 @@ jobs:
     - name: Run a multi-line script
       env:
         super_secret: ${{ secrets.FIREBASE_TOKEN }}
-      run: firebase deploy --token "$FIREBASE_TOKEN"
+      run: firebase deploy --token $FIREBASE_TOKEN
